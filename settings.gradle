@@ -1,0 +1,2 @@
+include ':app', ':musicdance'
+rootProject.name='MusicDanceView'
