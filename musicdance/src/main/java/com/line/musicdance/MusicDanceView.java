@@ -61,19 +61,7 @@ public class MusicDanceView extends View {
         increaseRunnable = new IncreaseRunnable();
         setMusicDanceConfig(new DefaultMusicDanceConfig());
     }
-
-    @Override
-    public void setVisibility(int v) {
-        if (getVisibility() != v) {
-            super.setVisibility(v);
-            if (v == GONE || v == INVISIBLE) {
-                stop();
-            } else {
-                start();
-            }
-        }
-    }
-
+    
     public int getNoteCount() {
         return musicNotes.size();
     }
