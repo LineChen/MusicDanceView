@@ -55,8 +55,6 @@ public class MusicDanceView extends View {
 
     private void init() {
         rect = new RectF();
-        noteSpace = dp2px(3);
-        noteWidth = dp2px(3);
         paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.setColor(Color.WHITE);
         paint.setStyle(Paint.Style.FILL);
