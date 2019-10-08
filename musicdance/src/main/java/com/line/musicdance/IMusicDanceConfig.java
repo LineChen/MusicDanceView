@@ -1,6 +1,7 @@
 package com.line.musicdance;
 
 
+import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 
 import java.util.List;
@@ -17,6 +18,9 @@ public interface IMusicDanceConfig {
     float getNoteSpace();
 
     float getNoteRadius();
+
+    @ColorInt
+    int getNoteColor();
 
     int getInvalidateMillis();
 

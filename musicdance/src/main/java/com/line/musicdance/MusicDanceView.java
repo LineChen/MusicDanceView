@@ -61,7 +61,7 @@ public class MusicDanceView extends View {
         increaseRunnable = new IncreaseRunnable();
         setMusicDanceConfig(new DefaultMusicDanceConfig());
     }
-    
+
     public int getNoteCount() {
         return musicNotes.size();
     }
@@ -73,6 +73,7 @@ public class MusicDanceView extends View {
         noteRadius = musicDanceConfig.getNoteRadius();
         step = musicDanceConfig.getStep();
         invalidateMillis = musicDanceConfig.getInvalidateMillis();
+        paint.setColor(musicDanceConfig.getNoteColor());
         requestLayout();
         start();
     }

@@ -1,6 +1,7 @@
 package com.line.musicdance;
 
 import android.content.res.Resources;
+import android.graphics.Color;
 
 import androidx.annotation.NonNull;
 
@@ -30,6 +31,11 @@ public class DefaultMusicDanceConfig implements IMusicDanceConfig {
     @Override
     public float getNoteRadius() {
         return Resources.getSystem().getDisplayMetrics().density * 3;
+    }
+
+    @Override
+    public int getNoteColor() {
+        return Color.WHITE;
     }
 
     @Override

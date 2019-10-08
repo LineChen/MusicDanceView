@@ -20,6 +20,11 @@ public class MainActivity extends AppCompatActivity {
             public float getNoteRadius() {
                 return Resources.getSystem().getDisplayMetrics().density * 0;
             }
+
+            @Override
+            public int getNoteColor() {
+                return getResources().getColor(R.color.colorAccent);
+            }
         });
     }
 }
